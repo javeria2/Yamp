@@ -28,7 +28,7 @@ app.use(flash());
 
 //the next three commands have to be always in this order
 app.use(require("express-session")({
-	secret: "my name is sanchay javeria",
+	secret: "yamp app",
 	resave: false,
 	saveUninitialized: false
 }));
@@ -48,7 +48,7 @@ app.use(bodyparser.urlencoded({extended: true}));
 
 //setup mongoose 
 // mongoose.connect("mongodb://localhost/yampdb");
-mongoose.connect("mongodb://javeria2:password@ds139685.mlab.com:39685/yamp");
+mongoose.connect("mongodb://javeria2:password@hjkxaks/yamp");
 
 //lookup js and css in public directory __dirname refers to current dir
 app.use(express.static(__dirname + "/public"));
